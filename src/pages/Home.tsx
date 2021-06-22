@@ -46,7 +46,6 @@ export function Home() {
                         <Button type='submit'>
                             Entrar na sala
                         </Button>
-
                     </form>
                 </div>
             </main>
