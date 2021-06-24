@@ -36,6 +36,10 @@ export function Home() {
             alert('Room does not exists.')
             return
         }
+        if (roomRef.val().endedAt) {
+            alert('Room already close')
+            return;
+        }
 
         history.push('/rooms/' + roomCode)
     }
@@ -54,7 +58,7 @@ export function Home() {
                         onClick={handleCreateRoom}
                     >
                         <img src={googleIconImg} alt="logo do google" />
-                        Crie sua sala
+                        Crie sua sala com o google
                     </button>
                     <div className='separator'>
                         ou entre em uma sala
